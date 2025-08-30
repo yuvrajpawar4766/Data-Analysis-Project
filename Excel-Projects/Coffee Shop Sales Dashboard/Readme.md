@@ -31,5 +31,5 @@ The dashboard highlights the following KPIs:
 - **Category Distribution** → Coffee dominates sales, followed by Branded items and Bakery products.
 
 ## 🖼️ Dashboard Preview
-![Dashboard]()
+![Dashboard](https://github.com/yuvrajpawar4766/Data-Analysis-Project/blob/ab1fd16bf9ac88eabe256636156680d29878e1f2/Excel-Projects/Coffee%20Shop%20Sales%20Dashboard/Dashboard_Screenshot.jpg)
 
