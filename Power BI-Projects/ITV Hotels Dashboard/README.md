@@ -1,73 +1,89 @@
 # 🏨 ITV Hotels Dashboard (Power BI)
 
-## 📌 Project Overview
-The **ITV Hotel Dashboard** is a 3-page interactive Power BI report designed to analyze hotel business performance.  
-It provides insights into **revenue, bookings, hotel utilization, cancellations, and customer behavior** to support data-driven decision-making.  
+📌 Project Overview
 
-The dashboard is divided into 3 main pages:
-1. **Business Overview** – revenue and booking snapshot
-2. **Hotel Performance** – operational efficiency metrics
-3. **Room & Customer Insights** – guest behavior and room usage trends  
+The ITV Hotels Dashboard is an interactive Power BI dashboard designed to analyze the overall performance of ITV Hotels across different cities, properties, and customer segments. It helps stakeholders track financial, operational, and customer insights in a single view.
 
----
+The dashboard is structured into three sections:
 
-## 🗂 Dataset Description
-The dashboard is built on a **Snowflake schema model** with fact and dimension tables:
+Business Overview
 
-- **fact_bookings** → Detailed booking transactions (guests, booking_id, status, revenue, platform, rating)  
-- **fact_aggregated_bookings** → Aggregated metrics like capacity and successful bookings  
-- **dim_hotels** → Hotel details (property name, city, category: Luxury/Business)  
-- **dim_rooms** → Room classes (Standard, Elite, Premium, Presidential) and categories  
-- **dim_date** → Date hierarchy (date, month, week, day type: weekday/weekend)  
+Hotel Performance
 
----
+Room & Customer Insights
 
-## 📊 KPIs Used
-- **Total Revenue Realized**  
-- **Total Bookings / Active Bookings**  
-- **Average Rating**  
-- **Occupancy Rate (%)**  
-- **Cancellation Rate (%)**  
-- **Average Length of Stay**  
-- **Average Daily Rate (ADR)**  
-- **Revenue per Available Room (RevPAR)**  
-- **Average Lead Time (days)**  
-- **Average Guests per Booking**  
-- **Weekend Booking %**  
-- **Peak Booking Week**  
+📊 KPIs (Key Performance Indicators)
+🔹 Business Overview
 
----
+₹ 2.01B – Total Generated Revenue
 
-## 📈 Visualizations Included
-- Donut chart → Bookings by platform  
-- Bar charts → Revenue by city, bookings per hotel  
-- Stacked bar → Booking status distribution (Checked Out, Cancelled, No Show)  
-- Line charts → Revenue/Occupancy trends over time   
-- Tables → Property-wise revenue, occupancy, guest counts  
-- Pie charts → Weekend vs Weekday bookings, booking platform contribution  
-- Room Analysis → Room class contribution to bookings  
+₹ 1.71B – Total Revenue Realized
 
----
+135K – Total Bookings
 
-## 💡 Key Insights
-- **High cancellation rate (~25%)** leads to major revenue leakage  
-- **Revenue concentrated** in Mumbai & Luxury hotels → underperformance in Delhi, Hyderabad, and some properties like ITV Seasons  
-- **Occupancy rate (~58%)** shows unused capacity → opportunity to increase utilization  
-- **Customers book late** (avg lead time ~3–4 days) and usually in **small groups (~2 guests)**  
-- **Weekend bookings (28%)** are significant → strong leisure demand  
-- **OTA platforms dominate** bookings, increasing dependence on third-party channels  
+94K – Total Successful Bookings
 
----
+3.62 – Average Rating
 
-## 🚀 How to Open the Dashboard
-1. Download the file **`ITV_Hotel_Dashboard.pbix`** from this repository  
-2. Open it using **Microsoft Power BI Desktop (free)**  
-3. Navigate across 3 pages to explore:
-   - Business Overview  
-   - Hotel Performance  
-   - Room & Customer Insights  
+🔹 Hotel Performance
 
----
+40.59% – Occupancy Rate
+
+24.83% – Cancellation Rate
+
+2.37 – Average Stay (in days)
+
+₹ 12.7K – ADR (Average Daily Rate)
+
+$7.35K – Avg. Revenue per Overall Room
+
+🔹 Room & Customer Insights
+
+3.71 – Avg. Lead Time (in days)
+
+2.04 – Avg. Guests per Booking
+
+135K – Room Booking Count
+
+62.68% – Weekday Booking %
+
+W 24 – Peak Booking Week
+
+📈 Visuals & Insights
+1️⃣ Business Overview
+
+Total Bookings by Booking Platform – "Others" lead with 55K, followed by MakeMyTrip (27K), LogTrip (15K), Direct Corporate (13K), Tripster (10K), Journey (8K), Direct Online (7K).
+
+Total Revenue Realized by City – Mumbai (₹0.67B) > Bangalore (₹0.42B) > Hyderabad (₹0.33B) > Delhi (₹0.29B).
+
+Occupancy Rate % by City – Delhi (42.42%) > Hyderabad (40.84%) > Mumbai (40.65%) > Bangalore (38.99%).
+
+Total Revenue Realized by Category (Pie Chart) – Luxury (61.61%, ₹1.05B) > Business (38.39%, ₹0.66B).
+
+2️⃣ Hotel Performance
+
+Bookings per Hotel by Property Name – ITV Palace (24K) > ITV Exotica (23K) = ITV City (23K) > ITV Grands (17K) > ITV Seasons (4K).
+
+Count of Booking ID by Property & Status (Stacked Bar) – Shows distribution across Cancelled, Checked Out, No Show.
+
+ADR by Category (Pie Chart) – Luxury (₹12.88K, 50.58%) > Business (₹12.58K, 49.42%).
+
+Occupancy Rate % by Property Name (Line Chart) – ITV Palace (41.98%) > ITV City (41.76%) > ITV Exotica (40.44%) > ITV Grands (36.79%) > ITV Seasons (31.50%).
+
+3️⃣ Room & Customer Insights
+
+Total Bookings by Room Class – Elite > Standard > Premium > Presidential.
+
+Total Bookings by Week No (Line Chart) – Consistent trend across weeks with a dip in Week 32.
+
+Total Bookings by Date (Time Series) – Shows demand pattern from May–July 2022 with weekly peaks.
+
+Count of Booking ID by Day Type (Pie Chart) – Weekdays (62.68%) > Weekends (37.32%).
+
+🛠️ Tools & Technologies
+
+Power BI – Data visualization & dashboard creation
+
 
 ## 📷 Dashboard Screenshots
 ### Business Overview
@@ -81,8 +97,5 @@ The dashboard is built on a **Snowflake schema model** with fact and dimension t
 
 ---
 
-## 🛠️ Tools Used
-- **Power BI Desktop** (DAX, Data Modeling, Visualizations)  
-- **Snowflake Schema** data modeling approach  
 
 
