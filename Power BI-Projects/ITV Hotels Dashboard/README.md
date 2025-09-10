@@ -1,4 +1,4 @@
-# 🏨 ITV Hotel Dashboard (Power BI)
+# 🏨 ITV Hotels Dashboard (Power BI)
 
 ## 📌 Project Overview
 The **ITV Hotel Dashboard** is a 3-page interactive Power BI report designed to analyze hotel business performance.  
@@ -27,7 +27,6 @@ The dashboard is built on a **Snowflake schema model** with fact and dimension t
 - **Total Bookings / Active Bookings**  
 - **Average Rating**  
 - **Occupancy Rate (%)**  
-- **Hotel Utilization (%)**  
 - **Cancellation Rate (%)**  
 - **Average Length of Stay**  
 - **Average Daily Rate (ADR)**  
@@ -43,11 +42,10 @@ The dashboard is built on a **Snowflake schema model** with fact and dimension t
 - Donut chart → Bookings by platform  
 - Bar charts → Revenue by city, bookings per hotel  
 - Stacked bar → Booking status distribution (Checked Out, Cancelled, No Show)  
-- Line charts → Revenue/Occupancy trends over time  
-- Heat maps → Revenue by city  
+- Line charts → Revenue/Occupancy trends over time   
 - Tables → Property-wise revenue, occupancy, guest counts  
-- Funnel & Pie charts → Weekend vs Weekday bookings, booking platform contribution  
-- Treemap / Room Analysis → Room class contribution to bookings  
+- Pie charts → Weekend vs Weekday bookings, booking platform contribution  
+- Room Analysis → Room class contribution to bookings  
 
 ---
 
